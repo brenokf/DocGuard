@@ -32,6 +32,40 @@ export const STEPS: Step[] = [
   { number: 4, description: "Personalize se necessário" }
 ];
 
+// lib/constants.ts
+export const FEATURE_COMPARISON = [
+  {
+    name: "Documentos por mês",
+    description: "Quantidade máxima de documentos gerados",
+    basic: "3",
+    premium: "Ilimitado"
+  },
+  {
+    name: "Atualizações automáticas",
+    description: "Ajustes automáticos conforme mudanças na legislação",
+    basic: false,
+    premium: true
+  },
+  {
+    name: "Suporte prioritário",
+    description: "Tempo de resposta garantido em até 2h",
+    basic: false,
+    premium: true
+  },
+  {
+    name: "Assinatura digital",
+    description: "Integração com serviços de assinatura eletrônica",
+    basic: false,
+    premium: true
+  },
+  {
+    name: "Modelos premium",
+    description: "Acesso a modelos para nichos específicos",
+    basic: "3 modelos",
+    premium: "Todos os modelos"
+  }
+];
+
 export const DOCUMENT_TYPES = {
   ECOMMERCE: 'politica-privacidade-ecommerce',
   SERVICE: 'contrato-prestacao-servico',
