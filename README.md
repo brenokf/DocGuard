@@ -1,54 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DocGuard
 
-## Getting Started
+DocGuard é uma aplicação web desenvolvida com [Next.js](https://nextjs.org) que tem como objetivo fornecer uma experiência moderna e responsiva para demonstrar planos, recursos e explicações do funcionamento do serviço. Inspirado em temas jurídicos, o projeto utiliza uma interface atraente e componentes interativos, seguindo as melhores práticas de design e desenvolvimento web.
 
-First, run the development server:
+## Sumário
+
+- [DocGuard](#docguard)
+  - [Sumário](#sumário)
+  - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  - [Estrutura do Projeto](#estrutura-do-projeto)
+  - [Contexto da Aplicação](#contexto-da-aplicação)
+  - [Melhores Práticas](#melhores-práticas)
+  - [Possíveis Evoluções](#possíveis-evoluções)
+  - [Recursos e Links Úteis](#recursos-e-links-úteis)
+  - [Deploy na Vercel](#deploy-na-vercel)
+
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework React para renderização híbrida (Server-side Rendering e Static Generation)
+- **React**: Biblioteca para construção de interfaces de usuário
+- **Tailwind CSS**: Framework de CSS para estilização rápida e responsiva
+- **React Icons & Heroicons**: Conjunto de ícones para uma interface visual rica
+- **React Scroll**: Biblioteca para rolagem suave e navegação ancorada
+- **Vercel**: Hospedagem e deploy otimizados para projetos Next.js
+
+## Estrutura do Projeto
+
+A seguir, uma visão geral da estrutura de pastas do projeto:
+
+```plaintext
+├── app/
+│   └── page.tsx           // Página principal da aplicação
+├── components/
+│   ├── BenefitsSection.tsx // Seção exibindo os benefícios
+│   ├── CtaSection.tsx      // Seção de call-to-action
+│   ├── Footer.tsx          // Rodapé da aplicação
+│   ├── HeroSection.tsx     // Seção principal com destaque
+│   ├── HowItWorks.tsx      // Seção explicando o funcionamento
+│   └── Navbar.tsx          // Menu de navegação superior
+├── lib/
+│   └── constants.ts       // Constantes e dados compartilhados (ex: STEPS, BENEFITS)
+├── pages/
+│   └── Home.tsx           // Página de entrada (pode ser integrada com app/page.tsx)
+├── styles/
+│   └── globals.css        // Estilização global com Tailwind CSS
+└── types/
+    └── index.ts           // Definições de tipos TypeScript
+
+## Iniciando o Projeto
+
+Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-## FOLDER PATH
-src/
-├── components/
-│   ├── HeroSection.tsx
-│   ├── BenefitsSection.tsx ← Novo
-│   ├── HowItWorks.tsx
-│   ├── CtaSection.tsx ← Novo
-│   ├── Footer.tsx ← Novo
-│   └── Navbar.tsx
-├── lib/
-│   └── constants.ts ← Atualizado
-├── pages/
-│   └── Home.tsx ← Será atualizado
-├── styles/
-│   └── globals.css
-└── types/
-    └── index.ts ← Atualizadoindexindex
-    
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode começar a editar a página modificando `app/page.tsx`. A página é atualizada automaticamente conforme você edita o arquivo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Este projeto utiliza [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para otimizar e carregar automaticamente [Geist](https://vercel.com/font), uma nova família de fontes para Vercel.
 
-## Learn More
+## Contexto da Aplicação
 
-To learn more about Next.js, take a look at the following resources:
+## Melhores Práticas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Possíveis Evoluções
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Recursos e Links Úteis
 
-## Deploy on Vercel
+Para saber mais sobre Next.js, confira os seguintes recursos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Documentação do Next.js](https://nextjs.org/docs) - saiba mais sobre os recursos e a API do Next.js.
+- [Aprenda Next.js](https://nextjs.org/learn) - um tutorial interativo de Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Você pode conferir o [repositório do Next.js no GitHub](https://github.com/vercel/next.js) - seu feedback e contribuições são bem-vindos!
+
+## Deploy na Vercel
+
+A maneira mais fácil de fazer o deploy de sua aplicação Next.js é usar a [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) dos criadores do Next.js.
+
+Confira nossa [documentação de deploy do Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para mais detalhes.
