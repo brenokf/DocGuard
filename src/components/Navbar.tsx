@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 import { useState } from 'react';
 
 export const Navbar = () => {
@@ -28,9 +29,9 @@ export const Navbar = () => {
             <Link href="/plans" className="text-gray-700 hover:text-blue-600">
               Planos
             </Link>
-            <Link href="/funciona" className="text-gray-700 hover:text-blue-600">
+            <ScrollLink to="howItWorksSection" smooth={true} duration={500} className="text-gray-700 hover:text-blue-600 cursor-pointer">
               Como Funciona
-            </Link>
+            </ScrollLink>
           </div>
           <button onClick={toggleMenu} className="md:hidden p-2">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,12 +42,12 @@ export const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <Link href="#planos">
+          <Link href="/plans">
             <a className="block text-gray-700 hover:text-blue-600 px-4 py-2">Planos</a>
           </Link>
-          <Link href="#funciona">
-            <a className="block text-gray-700 hover:text-blue-600 px-4 py-2">Como Funciona</a>
-          </Link>
+          <ScrollLink to="howItWorksSection" smooth={true} duration={500} className="block text-gray-700 hover:text-blue-600 px-4 py-2 cursor-pointer">
+            Como Funciona
+          </ScrollLink>
         </div>
       )}
     </nav>
