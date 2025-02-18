@@ -7,10 +7,8 @@ export const HeroSection = () => (
         Documentos Jurídicos Prontos em <br className="hidden lg:block" />
         <span className="text-yellow-400">5 Minutos</span>
       </h1>
-      <Link href="/documents">
-        <a className="inline-block bg-yellow-400 text-blue-900 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-extrabold hover:bg-yellow-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-          Gerar Meu Documento Agora →
-        </a>
+      <Link href="/documents" className="inline-block bg-yellow-400 text-blue-900 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-extrabold hover:bg-yellow-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+        Gerar Meu Documento Agora →
       </Link>
     </div>
   </section>
