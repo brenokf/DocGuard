@@ -14,6 +14,24 @@ pnpm dev
 bun dev
 ```
 
+## FOLDER PATH
+src/
+├── components/
+│   ├── HeroSection.tsx
+│   ├── BenefitsSection.tsx ← Novo
+│   ├── HowItWorks.tsx
+│   ├── CtaSection.tsx ← Novo
+│   ├── Footer.tsx ← Novo
+│   └── Navbar.tsx
+├── lib/
+│   └── constants.ts ← Atualizado
+├── pages/
+│   └── Home.tsx ← Será atualizado
+├── styles/
+│   └── globals.css
+└── types/
+    └── index.ts ← Atualizadoindexindex
+    
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
